@@ -1,0 +1,175 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: grey; */
+  color: #fff;
+}
+
+/* Main */
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* 
+
+
+
+                                            Topbar
+
+
+
+*/
+
+.topbar {
+  position: fixed;
+  top: 0;
+  height: 42px;
+  width: 100%;
+  background-color: black;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+}
+
+/* Main logo on left side  */
+.topbar #btn_logo {
+  position: absolute;
+  height: 40px;
+  left: 0;
+}
+
+/* Home && Search  */
+.topbar .home_search {
+  position: absolute;
+  height: 95%;
+  width: 500px;
+  left: 500px;
+  display: flex;
+  align-items: center;
+}
+
+/* Home button  */
+.home_search #btn_home {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 33px;
+  left: 0;
+  background-color: rgba(125, 125, 125, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.home_search #home_search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding:0 10px;
+  width: 430px;
+  height: 95%;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.home_search #home_search img {
+  height: 25px;
+  width:25px;
+  margin:5px;
+  background-color: none;
+}
+
+.home_search #home_search #search_txt{
+    display: flex;
+    flex:1;
+    margin:auto;
+    padding:auto;
+}
+.home_search #home_search #search_txt input{
+    background-color: transparent;
+    color:white;
+    border:none;
+    outline:none;
+    font-size:16px;
+    font-weight: 600;
+}
+/* Install_app, Notifiaction, team and profile */
+
+.topbar .group1 {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  right: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 15px;
+}
+.topbar .group1 a img {
+  height: 25px;
+}
+.topbar .group1 a {
+  text-decoration: none;
+}
+
+.topbar .group1 #grp1_install {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.topbar .group1 a #grp1_subscription {
+  line-height: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+  background-color: #fff;
+}
+
+.topbar .group1 a #grp1_profile {
+  height: 38px;
+}
+
+/* fdk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.sidebar {
+  /* background-color: red; */
+  width: 350px;
+}
+
+.main_content {
+  background-color: rgba(40, 40, 40, 1);
+  flex: 1;
+}
+.music_player {
+  background-color: blue;
+  position: fixed;
+  bottom: 0;
+  height: 72px;
+  width: 100%;
+}
