@@ -28,7 +28,6 @@ body {
   height: 42px;
   width: 100%;
   background-color: black;
-  /* background-color: rgba(255, 255, 255, 0.7); */
 }
 
 /* Main logo on left side  */
@@ -133,7 +132,114 @@ body {
   height: 38px;
 }
 
-/* fdk
+/* 
+
+
+
+
+                                                              Sidebar 
+
+
+
+
+*/
+.sidebar_main {
+  position:fixed;
+  top:42px;
+  display:flex;
+  width: 450px;
+  height:100vh;
+  background-color: black;
+}
+
+.sidebar_main .sidebar{
+  height:100%;
+  width:calc(100% - 20px);
+  padding-right:10px;
+  display:flex;
+  flex-direction:column;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+
+/* Your library and create button  */
+.sidebar .sidebar_group1{
+  height: 60px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  margin:6px;
+}
+
+/* Your Library*/
+.sidebar .sidebar_group1 .side_grp1_library{
+  height:30px;
+  position:absolute;
+  margin:auto 6px;
+  display:flex;
+  align-items:center;
+}
+
+.sidebar .sidebar_group1 .side_grp1_library img{
+  height:30px;
+  margin-right:10px;
+  display:none;
+}
+
+
+/* Create Button  */
+.sidebar .sidebar_group1 .side_grp1_create {
+  height:15px;
+  position:absolute;
+  right:0;
+  margin-right:15px;
+  display: flex;
+  align-items: center;
+  margin-left:auto;
+  background-color: rgba(40, 40, 40, 0.8);
+  padding:10px;
+  border-radius:40px;
+}
+
+.sidebar .sidebar_group1 .side_grp1_create img{
+  height:25px;
+  margin-right:5px;
+}
+.sidebar .sidebar_group1 .side_grp1_create a{
+  font-weight:900;
+}
+
+
+
+.sidebar .side_group2{
+  display:flex;
+  flex-direction: column;
+  height:100px;
+  width:calc(100% - 40px);
+  margin:5px 0;
+  padding:20px;
+  border-radius:10px;
+  background-color: rgba(40, 40, 40, 0.6);
+}
+.sidebar .side_group2 h4{
+  margin:0 0;
+}
+.sidebar .side_group2 h5{
+  margin:12px 0;
+}
+
+.sidebar .side_group2 h2{
+  line-height:1.2;
+  width: fit-content;
+  text-align:center;
+  display:inline-block;
+  padding:5px 12px;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius:30px;
+  color: #000;
+  background-color: #fff;
+}
 
 
 
@@ -142,12 +248,16 @@ body {
 
 
 
+/* 
 
 
 
 
 
 
+
+
+                                                                      Main Content 
 
 
 
@@ -157,11 +267,6 @@ body {
 
 
 */
-.sidebar {
-  /* background-color: red; */
-  width: 350px;
-}
-
 .main_content {
   background-color: rgba(40, 40, 40, 1);
   flex: 1;
