@@ -140,6 +140,7 @@ body {
   gap:1rem;
   padding:1.25rem;
   margin-top:1rem;
+  overflow: visible;
 }
 
 /* 
@@ -161,8 +162,17 @@ body {
   padding:0.4rem;
   border-radius: 1rem;
   width:fit-content;
+  display:inline-block;
+  transition: 0.1s;
 }
-
+/* 
+                                                                    Hover effects on buttons 
+ */
+.library .lib-box button:hover{
+  transform:scale(1.05);
+  background-color: white;
+  color:black;
+}
 
 
 
