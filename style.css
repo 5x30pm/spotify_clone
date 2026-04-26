@@ -4,27 +4,109 @@ body {
   padding: 0;
   background-color: black;
   color: #fff;
+  overflow: hidden;
 }
-.main{
-  display:flex;
-  height:100vh;
-}
-
-.sidebar{
-  width:350px;
-  background-color:red;
+.main {
+  display: flex;
+  height: 100vh;
 }
 
-.maincontent{
-  background-color: aqua;
-  flex:1;
+/* 
+                                                                                  sidebar 
+*/
+.sidebar {
+  width: 300px;
+  background-color: black;
+  background-color: green;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+/* 
+                                                                    nav tab under sidebar 
+ */
+.sidebar .nav {
+  background-color: #121212;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  height: 100px;
 }
 
-.musicplayer{
-  position:fixed;
-  bottom:0px;
-  height:100px;
-  width:100%;
-  color:black;
-  background-color: blanchedalmond;
+.sidebar .nav .nav-options {
+  gap: 0.5rem;
+}
+
+/* 
+                                                                Options under nav tab 
+ */
+.sidebar .nav .nav-options a {
+  line-height: 2.5rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.sidebar .nav .nav-options a img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+/* 
+                                                  navigations options after hover 
+*/
+
+.sidebar .nav .nav-options a:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 0 2px rgba(12, 12, 12, 1);
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+x 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+.maincontent {
+  background-color: #121212;
+  flex: 1;
+  overflow: auto;
+  border-radius: 1rem;
+}
+
+.musicplayer {
+  position: fixed;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  color: black;
+  background-color: black;
 }
