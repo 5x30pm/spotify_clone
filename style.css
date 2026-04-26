@@ -5,3 +5,26 @@ body {
   background-color: black;
   color: #fff;
 }
+.main{
+  display:flex;
+  height:100vh;
+}
+
+.sidebar{
+  width:350px;
+  background-color:red;
+}
+
+.maincontent{
+  background-color: aqua;
+  flex:1;
+}
+
+.musicplayer{
+  position:fixed;
+  bottom:0px;
+  height:100px;
+  width:100%;
+  color:black;
+  background-color: blanchedalmond;
+}
