@@ -5,6 +5,10 @@ body {
   background-color: black;
   color: #fff;
   overflow: hidden;
+  transition:0.2s;
+}
+button {
+  border: none;
 }
 .main {
   display: flex;
@@ -22,7 +26,7 @@ body {
   margin-right: 0.5rem;
 }
 /* 
-                                                                    nav tab under sidebar 
+                                                 nav tab under sidebar 
  */
 .sidebar .nav {
   background-color: #121212;
@@ -39,7 +43,7 @@ body {
 }
 
 /* 
-                                                                Options under nav tab 
+                                              Options under nav tab 
  */
 .sidebar .nav .nav-options a {
   line-height: 2.5rem;
@@ -55,7 +59,7 @@ body {
   margin-right: 0.5rem;
 }
 /* 
-                                                  navigations options after hover 
+                        navigations options after hover 
 */
 
 .sidebar .nav .nav-options a:hover {
@@ -73,7 +77,7 @@ body {
   background-color: #121212;
   display: flex;
   flex-direction: column;
-  margin-top: 0.25rem ;
+  margin-top: 0.25rem;
   padding: 0.5rem 0.75rem;
   border-radius: 1rem;
 }
@@ -87,20 +91,20 @@ body {
   padding: 0.5rem 0.75rem;
 }
 
-.sidebar .library .lib-option .your-lib{
-  margin-right:auto;
+.sidebar .library .lib-option .your-lib {
+  margin-right: auto;
   opacity: 0.7;
-  transition:.2s;
+  transition: 0.2s;
 }
 /* 
-                                                  hover effect on your library 
+                                      hover effect on your library 
  */
- .sidebar .library .lib-option .your-lib:hover{
+.sidebar .library .lib-option .your-lib:hover {
   opacity: 1;
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 /* 
-                                                                     image under your library 
+                                             image under your library 
  */
 .sidebar .library .lib-option .your-lib a img {
   height: 1.5rem;
@@ -117,68 +121,158 @@ body {
 .sidebar .library .lib-option .icon img {
   height: 2rem;
   margin-right: 0.5rem;
-  opacity:0.7;
-  animation:0.25s;
+  opacity: 0.7;
+  animation: 0.25s;
 }
 
 /* 
-                                                            hover on img under icon 
+                                        hover on img under icon 
  */
- .sidebar .library .lib-option .icon img:hover{
-  opacity:1;
-  transform:scale(1.1);
- }
+.sidebar .library .lib-option .icon img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 
- /* 
-                                                                          box under library 
+/* 
+                                                           box under library 
   */
-.library .lib-box{
+.library .lib-box {
   background-color: rgb(35, 35, 35);
   border-radius: 1rem;
-  display:flex;
-  flex-direction:column;
-  gap:1rem;
-  padding:1.25rem;
-  margin-top:1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  margin-top: 1rem;
   overflow: visible;
+}
+/* 
+                                             hover on lib  box 
+ */
+.library .lib-box:hover {
+  transform: scale(1.03);
 }
 
 /* 
-                                                                      for paragraph one 
+                                          for paragraph one 
  */
-.library .lib-box .box-p1{
+.library .lib-box .box-p1 {
   line-height: 1.25rem;
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 /* 
-                                                                      for paragraph two 
+                                                for paragraph two 
  */
-.library .lib-box .box-p2{
+.library .lib-box .box-p2 {
   line-height: 1rem;
-  font-size:0.95rem;
+  font-size: 0.95rem;
 }
-.library .lib-box button{
-  padding:0.4rem;
+.library .lib-box button {
+  padding: 0.4rem;
   border-radius: 1rem;
-  width:fit-content;
-  display:inline-block;
+  width: fit-content;
+  display: inline-block;
   transition: 0.1s;
 }
 /* 
-                                                                    Hover effects on buttons 
+                                            Hover effects on buttons 
  */
-.library .lib-box button:hover{
-  transform:scale(1.05);
+.library .lib-box button:hover {
+  transform: scale(1.05);
   background-color: white;
-  color:black;
+  color: black;
 }
 
+/* 
+                                                                                    main content 
+*/
+.maincontent {
+  background-color: #121212;
+  flex: 1;
+  overflow: auto;
+  border-radius: 1rem;
+}
 
+/* 
+                                                  sticky bar under main content
+ */
+.maincontent .sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  margin: 1rem 0;
+  height: 3rem;
+}
+/* 
+                          forward and backward btn 
+ */
+.sticky-nav-btn img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.5rem;
+}
+.sticky-nav-btn img:hover {
+  transform:scale(1.1);
+}
+.maincontent .sticky-nav .sticky-nav-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
 
+/* 
+                                     btn under download section 
+ */
+.maincontent .sticky-nav .sticky-nav-download button {
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+/*
+                                       hover on btn 1 
+ */
+.maincontent .sticky-nav .sticky-nav-download .nav-btn1:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+}
+/* 
+                                                  for btn 2 
+  */
+.maincontent .sticky-nav .sticky-nav-download .nav-btn2 {
+  background-color: #000;
+  color: #fff;
+}
+.maincontent .sticky-nav .sticky-nav-download .nav-btn2:hover {
+  transform: scale(1.05);
+  background-color: #000;
+  color: #fff;
+}
 
+.maincontent .sticky-nav .sticky-nav-download button img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+/* 
+                                      profile pic under download section 
+ */
+.maincontent .sticky-nav .sticky-nav-download img {
+  height: 3rem;
+  width: 3rem;
+}
 
-
+/*  
+                           hover on profile 
+ */
+.maincontent .sticky-nav .sticky-nav-download img:hover {
+  transform: scale(1.1);
+}
 
 /* 
 
@@ -210,13 +304,6 @@ x
 
 
 */
-
-.maincontent {
-  background-color: #121212;
-  flex: 1;
-  overflow: auto;
-  border-radius: 1rem;
-}
 
 .musicplayer {
   position: fixed;
