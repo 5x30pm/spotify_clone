@@ -5,7 +5,7 @@ body {
   background-color: black;
   color: #fff;
   overflow: hidden;
-  transition:0.2s;
+  transition: 0.2s;
 }
 button {
   border: none;
@@ -112,6 +112,9 @@ button {
   /* display:none; */
   transition: opacity 0.3s ease;
 }
+/* .sidebar .library:hover .lib-option .your-lib a img{
+  display:block;
+} */
 
 .sidebar .library .lib-option .your-lib a {
   text-decoration: none;
@@ -192,6 +195,7 @@ button {
   flex: 1;
   overflow: auto;
   border-radius: 1rem;
+  padding-left: 2rem;
 }
 
 /* 
@@ -203,9 +207,10 @@ button {
   align-items: center;
   position: sticky;
   top: 0;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   height: 3rem;
-  /* background-color: black; */
+  background-color: #121212;
+  z-index: 10;
 }
 /* 
                           forward and backward btn 
@@ -216,7 +221,7 @@ button {
   margin-left: 0.5rem;
 }
 .sticky-nav-btn img:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 .sticky-nav .sticky-nav-download {
   display: flex;
@@ -278,53 +283,57 @@ button {
 /*
                                                          cards under main content 
  */
-.maincontent .cards{
-  display:flex;
-  width:100%;
-  padding:1rem;
-  margin:1rem;
+.maincontent .cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-                                                    /* card overview  */
-.maincontent .cards .cards-section{
-  display:flex;
-  width:11rem;
-  padding:1.5rem 1rem;
-  margin:0.75rem;
-  flex-direction:column;
-  border-radius:0.5rem;
-  justify-content: center;
+/* card overview  */
+.maincontent .cards .cards-section {
+  display: flex;
+  width: 11rem;
+  padding: 1.5rem 1rem;
+  margin: 0.75rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  /* justify-content: center; */
   background-color: #252525;
-
+  transition:0.2s;
 }
-.maincontent .cards .cards-section img{
-  width:11rem;
-  border-radius:0.5rem;
-  /* padding:auto;
-  margin:auto; */
+.maincontent .cards .cards-section:hover {
+  transform: scale(1.05);
 }
-.maincontent .cards .cards-section .cards-h1{
-  line-height: 2.5rem;
-  font-size:1.25rem;
+.maincontent .cards .cards-section img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.maincontent .cards .cards-section .cards-h1 {
+  /* line-height: 2.5rem; */
+  font-size: 1.1rem;
   font-weight: 700;
+  margin:0.5rem 0;
 }
-.maincontent .cards .cards-section .cards-para{
+.maincontent .cards .cards-section .cards-para {
   line-height: 1rem;
-  font-size:0.85rem;
-  opacity:0.7;
+  margin:auto 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.maincontent .cards .cards-section:hover .cards-para{
+  opacity:1;
 }
 
 /* 
                                                   for blank space 
  */
-.maincontent .blank-space{
-  height:10rem;
-  width:80%;
-  margin:2rem auto 0 auto;
-  border-top:2px solid white;
+.maincontent .blank-space {
+  height: 10rem;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  border-top: 2px solid white;
   opacity: 0.4;
 }
-
 
 /* 
 
