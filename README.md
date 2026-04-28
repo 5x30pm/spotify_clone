@@ -5,9 +5,9 @@ This project focuses on recreating the user interface and layout of Spotify with
 
 ---
 
-## :rocket:Live Preview
+## :rocket: Live Preview
 
-## &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:rocket:&nbsp; [Live Preview](https://5x30pm.github.io/spotify_clone)
+## &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :rocket:&nbsp; [Live Preview](https://5x30pm.github.io/spotify_clone)
 
 ---
 
