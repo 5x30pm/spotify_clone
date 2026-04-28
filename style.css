@@ -100,8 +100,10 @@ button {
                                       hover effect on your library 
  */
 .sidebar .library .lib-option .your-lib:hover {
-  opacity: 1;
   transform: scale(1.1);
+}
+.sidebar .library .lib-option:hover .your-lib {
+  opacity: 1;
 }
 /* 
                                              image under your library 
@@ -309,7 +311,6 @@ button {
   border-radius: 0.5rem;
 }
 .maincontent .cards .cards-section .cards-h1 {
-  /* line-height: 2.5rem; */
   font-size: 1.1rem;
   font-weight: 700;
   margin:0.5rem 0;
@@ -334,43 +335,84 @@ button {
   border-top: 2px solid white;
   opacity: 0.4;
 }
-
-/* 
-
-
-
-
-
-
-
-
-
-x 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
+/*
+                                                                             Music player 
+ */
 
 .musicplayer {
   position: fixed;
   bottom: 0px;
   height: 100px;
   width: 100%;
-  color: black;
+  color: white;
   background-color: black;
+  display:flex;
+  align-items: center;
 }
+
+                                    /* album  */
+.musicplayer .album{
+  height: 100%;
+  /* background-color:greenyellow; */
+  width:30%;
+}
+                                          /* player */
+.musicplayer .player{
+  height: 100%;
+  width:40%;
+}
+                                      /* button under player  */
+.musicplayer .player .player-buttons{
+  height:55%;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.musicplayer .player .player-buttons img{
+  height:1rem;
+  margin-bottom:0;
+  padding:0 0.75rem;
+  transition:0.2s;
+  opacity:0.7;
+}
+.musicplayer .player .player-buttons img:hover{
+  transform:scale(1.4);
+  opacity:1;
+}
+.musicplayer .player .player-buttons .play-button{
+  height:30px;
+  opacity:1;
+}
+
+                                    /* progressive bar under player tab  */
+.musicplayer .player .progressive-bar{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0 0 1rem 0;
+  opacity:0.6;
+}
+
+.musicplayer .player .progressive-bar input{
+  width:80%;
+  appearance:none;
+  height:5px;
+  margin:0 5px;
+  border-radius:5px;
+  background-color: #5d5c5c;
+  cursor:pointer;
+
+
+
+  
+}
+
+
+                                    /* controls  */
+.musicplayer .controls{
+  height:100%;
+  /* background-color:yellowgreen; */
+  width:30%;
+}
+
